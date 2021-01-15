@@ -203,11 +203,13 @@ NAV
 
 .feature-body {
   flex: 1;
+  word-break: normal;
 }
 
 .feature-body p:not(:last-child) {
   margin-bottom: 20px;
 }
+
 
 /*--------------------------------
  WORKS
@@ -215,13 +217,17 @@ NAV
 .works-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: -40px;
+  width:100%;
 }
 
 .works-item {
-  flex: 0 0 32.31552%;
+  /* flex: 0 0 32.31552%; */
   margin-right: 1.52671%;
   margin-bottom: 40px;
+  width: 30%;
+  word-break: normal;
 }
 
 .works-item:nth-of-type(3n) {
@@ -230,6 +236,7 @@ NAV
 
 .works-body {
   text-align: center;
+  
 }
 
 .works-title {
@@ -240,6 +247,7 @@ NAV
 
 .works-text {
   font-size: 16px;
+ 
 }
 
 .works-url {
