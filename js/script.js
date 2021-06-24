@@ -1,4 +1,4 @@
- //OVERLAY
+ //Overlay
  
  const overlay = document.getElementById('overlay-text');
  const overlayBTN = document.getElementById('overlay-btn');
@@ -11,8 +11,7 @@ overlayBTN.addEventListener('click', removeVisible);
     
 
 $(function () {
-
-  //GO BACK TO PAGE TOP
+  //Go back to top
   $('#js-page-top').on('click', function () {
     $('body,html').animate({
       scrollTop: 0
@@ -20,7 +19,7 @@ $(function () {
     return false;
   });
 
-  //固定ヘッダー
+  //Fixed header
   $(window).scroll(function () {
     if ($(window).scrollTop() >= offset.top) {
       $nav.addClass('fixed');
@@ -31,7 +30,7 @@ $(function () {
     }
   });
 
-  //ページ内スクロール
+  //page scroll 
   var $nav = $(".gnav");
   var offset = $nav.offset();
   var navHeight = $nav.outerHeight();
